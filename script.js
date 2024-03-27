@@ -1,7 +1,15 @@
-const themeSwitcher = document.getElementById('themeSwitcher');
-const modeStatus = document.getElementById('modeStatus');
+const apkSelect = document.getElementById('apk-select');
+const apkDescription = document.getElementById('apk-description');
 
-themeSwitcher.addEventListener('change', function() {
-    document.body.classList.toggle('dark-theme');
-    modeStatus.textContent = document.body.classList.contains('dark-theme') ? 'ON' : 'OFF'; 
+apkSelect.addEventListener('change', function() {
+    const selectedApk = this.value;
+    let descriptionText = '';
+
+    if (selectedApk === 'arceus') {
+        descriptionText = "Arceus X, powered by SPDM team, capable of executing most scripts. (unable to make/send Webhooks, keep in mind.)";
+    } else if (selectedApk === 'codex') {
+        descriptionText = "Codex, also powered by SPDM team, simple and also capable of executing most scripts. (this APK cant make/send Webhooks unless your scripts code is modified yourself, keep in mind.)";
+    }
+
+    apkDescription.textContent = descriptionText;
 });
