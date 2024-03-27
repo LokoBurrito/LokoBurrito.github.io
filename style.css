@@ -40,10 +40,3 @@ body {
     width: 40%; /* Adjust width as needed */
     margin-bottom: 15px; /* Add some space between sections */
 }
-
-/* Footer styling */
-footer {
-    position: absolute; 
-    bottom: 0;
-    width: 100%;
-}
