@@ -29,6 +29,18 @@ body {
     width: 45%;
 }
 
+.side-sections {
+    display: flex;
+    flex-direction: column; /* Stack sections vertically */
+    margin-top: 30px; 
+    align-items: flex-end; /* Right-align sections within container */
+}
+
+.section {
+    width: 40%; /* Adjust width as needed */
+    margin-bottom: 15px; /* Add some space between sections */
+}
+
 /* Footer styling */
 footer {
     position: absolute; 
