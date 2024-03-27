@@ -7,33 +7,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="theme-switch">
-        <input type="checkbox" id="themeSwitcher" />
-        <label for="themeSwitcher">Dark Mode: <span id="modeStatus">OFF</span></label>
-    </div>
-
     <div class="container">
         <h1>Burrito's APK's</h1>
         <p>where you don't need to do loot-links or Linkvertises for APK's</p>
 
-        <div class="game-section">
-            <div class="game-info">
-                <h2>Arceus X (v1.2.8)</h2>
-                <p>Updated: 3/26/27</p>
-                <button onclick="location.href='https://www.mediafire.com/file/kw1dk7c39ce75z2/Roblox+Arceus+X+NEO+1.2.8.apk'">Download</button> 
-            </div>
-
-            <div class="game-info">
-                <h2>Codex (v2.617)</h2>
-                <p>Updated: 3/25/24</p>
-                <button onclick="location.href='https://www.mediafire.com/file/z72dvyk7kbac1v9/Codex_2.617.apk/file'">Download</button> 
-            </div>
-        </div>
-
-        <footer>
-            &copy; LokoBurrito - 2024 <br>
-            Fluxus coming soon...
-        </footer>
+        <div class="apk-selection">
+            <label for="apk-select">Select APK:</label>
+            <select id="apk-select">
+                <option value="arceus">Arceus X</option>
+                <option value="codex">Codex</option>
+            </select>
+            <div id="apk-description"></div> 
+            <button onclick="location.href='https://www.mediafire.com/file/kw1dk7c39ce75z2/Roblox+Arceus+X+NEO+1.2.8.apk'">Download</button>
+        </div>    
     </div>
 
     <script src="script.js"></script>
