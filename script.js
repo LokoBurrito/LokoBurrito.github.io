@@ -15,5 +15,7 @@ apkSelect.addEventListener('change', function() {
     }
 
     apkDescription.textContent = descriptionText;
+    // Update download button
     downloadButton.href = downloadLink; 
+    downloadButton.target = '_blank'; // Open in a new tab
 });
