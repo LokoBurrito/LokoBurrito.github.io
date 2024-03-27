@@ -1,51 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Burrito's APKs</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0; /* Adjust background color as needed */
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            margin: 0;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Burrito's APKs</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0; /* Adjust background color as needed */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+    }
 
-        .container {
-            text-align: center;
-        }
+    .container {
+      text-align: center;
+    }
 
-        .game-info {
-            margin-top: 20px;
-        }
+    .game-info {
+      margin-top: 20px;
+    }
 
-        button {
-            background-color: #007bff; /* Example button color */
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-    </style>
+    button {
+      background-color: #007bff; /* Example button color */
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    /* Theme Switcher Styles */
+    .theme-switch {
+        position: fixed;
+        top: 10px; 
+        left: 10px;
+    }
+
+    .theme-switch input[type="checkbox"] {
+        display: none; 
+    }
+
+    .theme-switch label {
+        /* Style your switch here */
+        display: block;
+        width: 50px;
+        height: 25px;
+        background-color: #ccc; /* Example - adjust as needed */
+        border-radius: 15px; 
+        cursor: pointer;
+    }
+
+    .theme-switch label::after {
+        content: ''; 
+        display: block;
+        background-color: white; /* Example - adjust as needed  */
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        transition: 0.3s;
+    }
+
+    .theme-switch input:checked + label::after {
+        transform: translateX(25px);
+    }
+
+    body.dark-theme {
+        background-color: #333; 
+        color: white; 
+    } 
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Burrito's APK's</h1>
-        <p>Updated 3/26/27</p>
-
-<div class="game-info">
-     <h2>Arceus X (v1.2.8)</h2>
-     <p>Updated: 3/25/24</p>
-     <button onclick="location.href='https://download2391.mediafire.com/8zdg94s9k6zgWuvUbw4kPM6HerVvA6SC28bRfdWBi1U8-nMQvBnmmLZhwa4H2HxB_sCrWnhE6WcUNSJlV9BAGETmahYw9kYZW1AyK330jy2oIXbJVf_GqJC6NherDd2LuHdHLaeM6zLiAD3oOVbZz2yo_db2tNqi4WpXtl0pqeAr/kw1dk7c39ce75z2/Roblox+Arceus+X+NEO+1.2.8.apk'">Download</button> 
-</div>
-
+    <div class="theme-switch">
+        <input type="checkbox" id="themeSwitcher" />
+        <label for="themeSwitcher"></label>
     </div>
+  <div class="container">
+    <h1>Burrito's APK's</h1>
+    <p>Updated 3/26/27</p>
 
+    <div class="game-info">
+      <h2>Arceus X (v1.2.8)</h2>
+      <p>Updated: 3/25/24</p>
+      <button onclick="location.href='https://download2391.mediafire.com/8zdg94s9k6zgWuvUbw4kPM6HerVvA6SC28bRfdWBi1U8-nMQvBnmmLZhwa4H2HxB_sCrWnhE6WcUNSJlV9BAGETmahYw9kYZW1AyK330jy2oIXbJVf_GqJC6NherDd2LuHdHLaeM6zLiAD3oOVbZz2yo_db2tNqi4WpXtl0pqeAr/kw1dk7c39ce75z2/Roblox+Arceus+X+NEO+1.2.8.apk'">Download</button> 
+    </div>
+
+    <div class="game-info">
+         <h2>Codex (v2.617)</h2>
+         <p>Updated: 3/25/24</p>
+         <button onclick="location.href='https://www.example.com/codex'">Download</button> 
+     </div>
+
+  </div>
+
+<script>
+    const themeSwitcher = document.getElementById('themeSwitcher');
+
+    themeSwitcher.addEventListener('change', function() {
+        document.body.classList.toggle('dark-theme');
+    });
+</script>
 </body>
 </html>
