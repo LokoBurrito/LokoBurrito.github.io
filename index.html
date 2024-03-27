@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Burrito's APKs</title>
   <style>
-    body {
+    body {
       font-family: Arial, sans-serif; 
       background-color: #f0f0f0;
       display: flex;
@@ -41,8 +41,50 @@
       cursor: pointer;
     }
 
-    /* Theme Switcher Styles */ 
-    /* ... (Existing styles remain the same) ... */ 
+    /* Theme Switcher Styles */
+    .theme-switch {
+        position: fixed;
+        top: 10px; 
+        left: 10px;
+    }
+
+    .theme-switch input[type="checkbox"] {
+        display: none; 
+    }
+
+    .theme-switch label {
+        display: block;
+        width: 50px;
+        height: 25px;
+        background-color: #ccc; 
+        border-radius: 15px; 
+        cursor: pointer;
+        position: relative; 
+    }
+
+    .theme-switch label::after {
+        content: ''; 
+        display: block;
+        background-color: white; 
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        transition: 0.3s;
+        position: absolute; 
+        top: 50%;
+        left: 2px;         
+        transform: translateY(-50%); 
+    }
+
+    .theme-switch input:checked + label::after {
+        left: calc(100% - 2px - 20px); 
+        transform: translateY(-50%); 
+    }
+
+    body.dark-theme {
+        background-color: #333; 
+        color: white; 
+    } 
   </style>
 </head>
 <body>
@@ -70,7 +112,10 @@
   </div>
 
 <script>
-    /* ... (Your existing JavaScript remains the same) ... */ 
+    const themeSwitcher = document.getElementById('themeSwitcher');
+    themeSwitcher.addEventListener('change', function() {
+        document.body.classList.toggle('dark-theme');
+    });
 </script>
 </body>
 </html>
