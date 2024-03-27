@@ -22,3 +22,10 @@ apkSelect.addEventListener('change', function() {
     downloadButton.href = downloadLink; 
     downloadButton.target = '_blank'; // Open download links in a new tab
 });
+
+// Redirect on button click
+downloadButton.addEventListener('click', function() {
+    if (downloadLink) { // Check if a downloadLink has been set 
+        window.open(downloadLink, '_blank');
+    } 
+});
