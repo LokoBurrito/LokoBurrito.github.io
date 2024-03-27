@@ -49,23 +49,29 @@
         display: block;
         width: 50px;
         height: 25px;
-        background-color: #ccc; /* Example - adjust as needed */
+        background-color: #ccc; /* Adjust as needed for old-style appearance */
         border-radius: 15px; 
         cursor: pointer;
+        position: relative; /* To position the circle within the switch*/
     }
 
     .theme-switch label::after {
         content: ''; 
         display: block;
-        background-color: white; /* Example - adjust as needed  */
+        background-color: white; /* Adjust as needed for old-style appearance */
         width: 20px;
         height: 20px;
         border-radius: 50%;
         transition: 0.3s;
+        position: absolute; /* Position the circle within the switch */
+        top: 50%;
+        left: 2px;         /* Position the circle on the left to start */
+        transform: translateY(-50%); 
     }
 
     .theme-switch input:checked + label::after {
-        transform: translateX(25px);
+        left: calc(100% - 2px - 20px); /* Calculate position for the right side */
+        transform: translateY(-50%); 
     }
 
     body.dark-theme {
