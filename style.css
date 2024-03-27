@@ -1,33 +1,37 @@
-.container {
-    text-align: center; /* Center text in the container */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center; 
     padding: 20px;
 }
 
-.button-container {
+.download-buttons {
     display: flex;
-    justify-content: space-between; /* Space buttons evenly */
-    margin-top: 50px; /* Add some margin from top content */
+    justify-content: space-between; 
+    margin-top: 50px; 
 }
 
 .download-button {
-    text-align: center; /* Center text within download buttons */
     padding: 15px;
-    border: 1px solid #ddd; /* Add a thin border */
-    border-radius: 5px; /* Rounded corners */
-    margin: 0 10px; /* Add some margin between buttons */
-    width: 45%; /* Set width for each button (adjust as needed) */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 0 10px;
+    width: 45%; 
 }
 
-.download-button h2,
-.download-button p {
-    margin-bottom: 5px; /* Add some space between heading and text */
+/* Styling for 'Fluxus' and 'Contact me' sections */
+.sections {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px; 
 }
 
-.download-button a {
-    color: #000; /* Set text color for download links */
-    text-decoration: none; /* Remove underline from links */
+.section {
+    width: 45%;
 }
 
-.download-button a:hover {
-    color: #007bff; /* Change link color on hover */
+/* Footer styling */
+footer {
+    position: absolute; 
+    bottom: 0;
+    width: 100%;
 }
