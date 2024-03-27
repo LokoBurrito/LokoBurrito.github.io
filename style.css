@@ -1,11 +1,11 @@
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
+    text-align: center; /* Center main content */
     padding: 20px;
 }
 
 .container { 
-    position: relative; /* Make container relative for absolute positioning */
+    position: relative; /* Make container relative */
 }
 
 section {
@@ -14,31 +14,32 @@ section {
     padding: 15px;
     border: 1px solid #ddd;
     border-radius: 5px;
+    margin: 20px; /* Adding margin to create space around sections */
 }
 
 .top-left {
-    top: 20px;
-    left: 20px;
+    top: 0; /* Removed '20px' offset */
+    left: 0; /* Removed '20px' offset */
 }
 
 .top-right {
-    top: 20px;
-    right: 20px;
+    top: 0; /* Removed '20px' offset */
+    right: 0; /* Removed '20px' offset */
 }
 
 .bottom-left {
-    bottom: 20px;
-    left: 20px;
+    bottom: 0; /* Removed '20px' offset */
+    left: 0; /* Removed '20px' offset */
 }
 
 .bottom-right {
-    bottom: 20px;
-    right: 20px;
+    bottom: 0; /* Removed '20px' offset */
+    right: 0; /* Removed '20px' offset */
 }
 
 footer {
     position: absolute;
     bottom: 0;
-    width: 100%;
+    width: 100%; 
     text-align: center; 
 }
