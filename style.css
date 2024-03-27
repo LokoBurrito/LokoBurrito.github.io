@@ -4,42 +4,46 @@ body {
     padding: 20px;
 }
 
-.container { 
-    position: relative; /* Make container relative */
+.download-buttons {
+    display: flex;
+    justify-content: space-between; /* Space buttons evenly */
+    margin-top: 50px; 
 }
 
-section {
-    position: absolute;
-    width: 45%; /* Adjust as needed */
+.download-button {
     padding: 15px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    margin: 20px; /* Adding margin to create space around sections */
+    margin: 0 10px;
+    width: 45%; 
 }
 
-.top-left {
-    top: 0; /* Removed '20px' offset */
-    left: 0; /* Removed '20px' offset */
+/* Styling for 'Fluxus' and 'Contact me' sections */
+.side-sections {
+    display: flex;
+    flex-direction: column; /* Stack sections vertically */
+    margin-top: 30px; 
+    align-items: flex-end; /* Right-align sections within container */
 }
 
-.top-right {
-    top: 0; /* Removed '20px' offset */
-    right: 0; /* Removed '20px' offset */
+.section {
+    width: 40%; /* Adjust width as needed */
+    margin-bottom: 15px; /* Add some space between sections */
 }
 
-.bottom-left {
-    bottom: 0; /* Removed '20px' offset */
-    left: 0; /* Removed '20px' offset */
-}
-
-.bottom-right {
-    bottom: 0; /* Removed '20px' offset */
-    right: 0; /* Removed '20px' offset */
-}
-
+/* Footer styling */
 footer {
-    position: absolute;
+    position: absolute; 
     bottom: 0;
-    width: 100%; 
-    text-align: center; 
+    width: 100%;
 }
+
+/* Fluxus Section */
+.fluxus-section {
+    position: absolute;
+    bottom: 20px; /* Adjust position from bottom as needed */
+    left: 20px; /* Adjust position from left as needed */
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+} 
