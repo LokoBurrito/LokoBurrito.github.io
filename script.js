@@ -1,6 +1,7 @@
 const apkSelect = document.getElementById('apk-select');
 const apkDescription = document.getElementById('apk-description');
 const downloadButton = document.querySelector('.apk-selection button'); 
+let downloadLink;
 
 apkSelect.addEventListener('change', function() {
     const selectedApk = this.value;
@@ -25,7 +26,7 @@ apkSelect.addEventListener('change', function() {
 
 // Redirect on button click
 downloadButton.addEventListener('click', function() {
-    if (downloadLink) { // Check if a downloadLink has been set 
-        window.open(downloadLink, '_blank');
-    } 
+  if (downloadLink) { // Check if a downloadLink has been set 
+    window.open(downloadLink, '_blank');
+  } 
 });
