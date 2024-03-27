@@ -1,12 +1,12 @@
 body {
     font-family: Arial, sans-serif;
-    text-align: center; 
+    text-align: center; /* Center main content */
     padding: 20px;
 }
 
 .download-buttons {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between; /* Space buttons evenly */
     margin-top: 50px; 
 }
 
@@ -19,16 +19,6 @@ body {
 }
 
 /* Styling for 'Fluxus' and 'Contact me' sections */
-.sections {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px; 
-}
-
-.section {
-    width: 45%;
-}
-
 .side-sections {
     display: flex;
     flex-direction: column; /* Stack sections vertically */
@@ -40,3 +30,20 @@ body {
     width: 40%; /* Adjust width as needed */
     margin-bottom: 15px; /* Add some space between sections */
 }
+
+/* Footer styling */
+footer {
+    position: absolute; 
+    bottom: 0;
+    width: 100%;
+}
+
+/* Fluxus Section */
+.fluxus-section {
+    position: absolute;
+    bottom: 20px; /* Adjust position from bottom as needed */
+    left: 20px; /* Adjust position from left as needed */
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+} 
