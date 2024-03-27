@@ -1,17 +1,33 @@
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; 
-    min-height: 100vh;
-    margin: 0;
-}
-
 .container {
-    text-align: center;
+    text-align: center; /* Center text in the container */
+    padding: 20px;
 }
 
-.apk-selection {
-    margin-bottom: 20px;
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Space buttons evenly */
+    margin-top: 50px; /* Add some margin from top content */
+}
+
+.download-button {
+    text-align: center; /* Center text within download buttons */
+    padding: 15px;
+    border: 1px solid #ddd; /* Add a thin border */
+    border-radius: 5px; /* Rounded corners */
+    margin: 0 10px; /* Add some margin between buttons */
+    width: 45%; /* Set width for each button (adjust as needed) */
+}
+
+.download-button h2,
+.download-button p {
+    margin-bottom: 5px; /* Add some space between heading and text */
+}
+
+.download-button a {
+    color: #000; /* Set text color for download links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.download-button a:hover {
+    color: #007bff; /* Change link color on hover */
 }
