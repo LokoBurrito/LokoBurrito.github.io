@@ -1,50 +1,23 @@
-body {
-    font-family: 'Comic Sans MS', cursive; 
-    margin: 0;
-    padding: 0;
-    background-color: #fff;
-    color: #333;
-}
-
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center; /* Center content within the container */
-}
-
-header {
-    text-align: center; 
-}
-
-h1 {
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
-h2 {
-    margin:0 auto; /* Center h2 elements */
-}
-
-p {
-    font-size: 0.8em;
-    margin-top: 0;
-    margin: 0 auto; /* Center p elements */
-}
-
 .app {
+    text-align: center; /* Center content horizontally */
     background-color: #f5f5f5;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 5px;
+    display: inline-block; /* Allow elements to stack horizontally */
+    margin: 0 10px; /* Add spacing between elements */
+}
+
+h2, p {
+    margin: 5px 0; /* Add spacing between text elements */
+    font-weight: bold; /* Make text bold like the image */
 }
 
 .download-btn {
     display: block;
-    background-color: #008CBA; 
+    background-color: #008CBA;
     color: white;
-    padding: 15px 30px;
+    padding: 10px 20px; /* Adjust padding to fit within the section */
     text-decoration: none;
-    border-radius: 10px; /* More rounded corners */
-    margin: 0 auto; /* Center button within its section */
+    border-radius: 5px;
 }
