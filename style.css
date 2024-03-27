@@ -70,7 +70,16 @@ footer {
         transform: translateY(-50%); 
     }
 
-    body.dark-theme {
-        background-color: #333; 
-        color: white; 
-    } 
+body.dark-theme {
+    background-color: #333;
+    color: white;
+}
+
+.game-info {
+    margin: 10px;
+}
+
+button {
+    background-color: #007bff; /* Blue download buttons */
+    color: white;
+    padding: 10px
