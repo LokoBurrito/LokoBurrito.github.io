@@ -29,3 +29,7 @@ body {
 .offline {
   color: red;
 }
+
+.pending {
+  color: #FFAA33;
+}
