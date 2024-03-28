@@ -1,23 +1,31 @@
-.app {
-    text-align: center; /* Center content horizontally */
-    background-color: #f5f5f5;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    display: inline-block; /* Allow elements to stack horizontally */
-    margin: 0 10px; /* Add spacing between elements */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  text-align: center;
 }
 
-h2, p {
-    margin: 5px 0; /* Add spacing between text elements */
-    font-weight: bold; /* Make text bold like the image */
+.container {
+  margin-top: 50px;
 }
 
-.download-btn {
-    display: block;
-    background-color: #008CBA;
-    color: white;
-    padding: 10px 20px; /* Adjust padding to fit within the section */
-    text-decoration: none;
-    border-radius: 5px;
+.exploit-info {
+  margin: 10px 0;
+}
+
+.exploit-info h2 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.status {
+  font-weight: bold;
+}
+
+.online {
+  color: green;
+}
+
+.offline {
+  color: red;
 }
